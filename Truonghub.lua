@@ -5582,39 +5582,3 @@ _G.FullBrightExecuted = true
 _G.FullBrightEnabled = not _G.FullBrightEnabled 
     end
 })
------------------------------//
-local Section2 = Tab2:section({name = "
-Tele", side = "right"})
------//
-Section2:button({
-    name = "Tesla",
-    callback = function()
-    for i = 1, 2 do
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.TeslaLab.Generator.Generator.CFrame
-    wait(0.7)
-end
-    end
-})
------//
-Section2:button({
-    name = "End Game",
-    callback = function()
-    local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-local rootPart = character:WaitForChild("HumanoidRootPart")
-
--- Target position
-local targetPosition = Vector3.new(-380, 36.5, -49127)
-
--- Teleport
-rootPart.CFrame = CFrame.new(targetPosition)
-    end
-})
------//
-Section2:button({
-    name = "Train",
-    callback = function()
-    local c = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
-for _,m in ipairs(game:GetDescendants()) do if m:IsA("Model") and m.Name=="ConductorSeat" then local s=m:FindFirstChildWhichIsA("VehicleSeat",true) if s then c:MoveTo(s.Position) break end end end
-    end
-})
