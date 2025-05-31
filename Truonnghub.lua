@@ -2372,46 +2372,18 @@ local c = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.Charact
 for _,m in ipairs(game:GetDescendants()) do if m:IsA("Model") and m.Name=="ConductorSeat" then local s=m:FindFirstChildWhichIsA("VehicleSeat",true) if s then c:MoveTo(s.Position) break end end end
 end)
 
-Misc:Button("Delete Effect Damage", function()
-
+Misc:Button("OP SWING V1", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeadHarse/DeadRails/refs/heads/main/OPAUTOSWING"))()
 end)
 
-Misc:Button("Delete Effect Damage", function()
-
+Misc:Button("OP SWING V2", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeadHarse/DeadRails/refs/heads/main/OPAUTOSWINGV2"))()
 end)
 
-Misc:Button("Delete Effect Damage", function()
-
+Misc:Button("OP SWING V3", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeadHarse/DeadRails/refs/heads/main/OPAUTOSWINGV3.5"))()
 end)
 
-Misc:Button("Delete Effect Damage", function()
-
-end)
-
-Misc:Button("Delete Effect Damage", function()
-
-end)
-
-Misc:Button("Delete Effect Damage", function()
-
-end)
-
-Misc:Button("Delete Effect Damage", function()
-
-end)
-
-Misc:Button("Delete Effect Damage", function()
-
-end)
-
-Misc:Button("Delete Effect Damage", function()
-
-end)
-
-Misc:Button("Delete Effect Damage", function()
-
-end)
-
-Misc:Button("Delete Effect Damage", function()
-
+Misc:Button("OP SWING V4", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeadHarse/DeadRails/refs/heads/main/NOTV4TRUST"))()
 end)
